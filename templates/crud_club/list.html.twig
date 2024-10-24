@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+    <h1>List Of Clubs</h1>
+    <table border="1">
+        <tr>
+            <td>id</td>
+            <td>Ref</td>
+            <td>Name</td>
+
+        </tr>
+        <tr {% for club in Clubs %}>
+            <td>{{ club.id }}</td>
+            <td>{{ club.ref }}</td>
+            <td>{{ club.name }}</td>
+            <td><a href="">add player</a></td>
+            <td><a href="">remove player</a></td>
+        </tr {% endfor %}>
+    </table >
+</body>
+</html>
